@@ -1,0 +1,17 @@
+name: fwel
+version: 0.1.0
+
+authors:
+  - Rob Shepherd <rgshepherd@gmail.com>
+
+targets:
+  fwel:
+    main: src/fwel.cr
+
+dependencies:
+  myhtml:
+    github: kostya/myhtml
+
+crystal: 0.27.0
+
+license: MIT
