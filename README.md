@@ -1,27 +1,23 @@
-# fwel
+# Fun With Emerging Languages - Crystal
 
-TODO: Write a description here
+    https://pastebin.com/raw/KzwWFYJL
 
-## Installation
+## Code
 
-TODO: Write installation instructions here
+see src/fwel.cr
+
+## Build
+
+    $ shards update
+    $ crystal build --release src/fwel.cr -o fwel-osx
+
+I'm on a Mac, so to build for linux in docker:
+
+    docker run --rm -it -v `pwd`:/app -v `pwd`/lib/linux:/app/lib -w /app crystallang/crystal /bin/bash -c "shards update; crystal build --release src/fwel.cr"
+
+
 
 ## Usage
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
-
-## Contributing
-
-1. Fork it (<https://github.com/your-github-user/fwel/fork>)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
-
-## Contributors
-
-- [Rob Shepherd](https://github.com/your-github-user) - creator and maintainer
+    ./fwel
+    Linus Torvalds
